@@ -2,7 +2,7 @@ Contento Cucina 🍝
 Boas-vindas ao Contento Cucina!
 
 📝 Sobre o Projeto
-Este é o site de página única (one-page) que criei para um restaurante fictício, o "Contento Cucina". O grande foco aqui foi construir um layout moderno e que se adaptasse perfeitamente a qualquer tela, seja no celular ou no computador.
+Este é o site de página única (one-page) que criei para um restaurante raal em que trabalho, utilizei informações diretas do tal, o Contento Cucina. O grande foco aqui foi construir um layout moderno e que se adaptasse perfeitamente a qualquer tela, seja no celular ou no computador.
 
 Para fazer isso, decidi usar apenas o "trio" clássico: HTML, CSS e JavaScript.
 
