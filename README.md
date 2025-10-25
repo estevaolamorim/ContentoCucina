@@ -19,4 +19,4 @@ JavaScript (Vanilla JS): Todo o dinamismo, como o menu e os eventos de rolagem, 
 🔗 Quer ver como ficou?
 Você pode dar uma olhada no projeto funcionando por este link:
 
-https://seu-link-aqui.vercel.app/](https://github.com/estevaolamorim/ContentoCucina/blob/main/ascii.rar)
+https://github.com/estevaolamorim/ContentoCucina/blob/main/ascii.rar
