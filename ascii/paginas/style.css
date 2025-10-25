@@ -1,0 +1,354 @@
+:root{
+    --cor-destaque-dourado: #b98b59; 
+    --cor-fundo-pagina: #fdfaf6;
+    --cor-texto-principal: #333333;
+    --cor-fundo-cabecalho-rodape: #222222;
+    
+    --fonte-titulos-serifada: 'Playfair Display', serif;
+    --fonte-corpo-sans-serif: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--fonte-corpo-sans-serif);
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-texto-principal);
+    line-height: 1.6;
+}
+
+h1, h2, h3{
+    font-family: var(--fonte-titulos-serifada);
+    color: var(--cor-destaque-dourado);
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+section{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.navbar{
+    background-color: var(--cor-fundo-cabecalho-rodape);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    font-family: var(--fonte-titulos-serifada);
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .logo span{
+    color: var(--cor-destaque-dourado);
+}
+
+.navbar .links-navegacao{
+    list-style: none;
+    display: flex;
+}
+
+.navbar .links-navegacao li{
+    margin-left: 20px;
+}
+
+.navbar .links-navegacao li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.navbar .links-navegacao li a:hover,
+.navbar .links-navegacao li a.active{
+    color: var(--cor-destaque-dourado);
+    border-bottom-color: var(--cor-destaque-dourado);
+}
+
+#inicio{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imagens/restaurante.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+
+#inicio-conteudo{
+    max-width: 600px;
+}
+
+#inicio h1{
+    font-size: 64px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#inicio h1 span{
+    color: var(--cor-destaque-dourado);
+}
+
+#inicio p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color: var(--cor-destaque-dourado);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #a0744a; 
+}
+
+#sobre .container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+
+#sobre .sobre-img{
+    flex: 1;
+    max-width: 50%;
+}
+
+#sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#sobre .sobre-texto{
+    flex: 1;
+}
+
+#cardapio{
+    background-color: #fff;
+}
+
+#cardapio h1{
+    font-size: 42px;
+}
+
+.menu-categoria h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--cor-destaque-dourado);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.cardapio-item{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.cardapio-item.reverse{
+    flex-direction: row-reverse;
+}
+
+.cardapio-img, .cardapio-texto{
+    flex: 1;
+}
+
+.cardapio-img img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cardapio-texto h4{
+    font-family: var(--fonte-titulos-serifada);
+    font-size: 24px;
+    color: var(--cor-texto-principal);
+    margin-bottom: 10px;
+}
+
+.cardapio-texto p{
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.galeria-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.galeria-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#reservas{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?restaurant-interior') no-repeat center center/cover;
+    color: white;
+}
+
+#reservas h2{
+    color: white;
+}
+
+#reservas p{
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-weight: 300;
+}
+
+.contato-info{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+footer{
+    background-color: var(--cor-fundo-cabecalho-rodape);
+    color: #aaa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-links a{
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover{
+    color: var(--cor-destaque-dourado);
+}
+
+footer p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.botao-menu-mobile{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .navbar .container{
+        flex-wrap: wrap;
+    }
+
+    .botao-menu-mobile{
+        display: block;
+    }
+
+    .navbar .links-navegacao{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        background-color: var(--cor-fundo-cabecalho-rodape);
+    }
+    
+    .navbar .links-navegacao.active{
+        display: flex;
+    }
+
+    .navbar .links-navegacao li{
+        margin: 10px 0;
+    }
+
+    #inicio h1{
+        font-size: 48px;
+    }
+
+    #inicio p{
+        font-size: 18px;
+    }
+    
+    #sobre .container{
+        flex-direction: column;
+    }
+    
+    #sobre .sobre-img{
+        max-width: 100%;
+    }
+    
+    .cardapio-item{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .cardapio-item.reverse{
+        flex-direction: column;
+    }
+
+    .cardapio-texto{
+        padding: 0 15px;
+    }
+    
+    .contato-info{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
