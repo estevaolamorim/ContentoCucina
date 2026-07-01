@@ -10,19 +10,20 @@ O objetivo principal foi desenvolver uma página estruturada, visualmente agrad�
 
 ## 🚀 Acesse o Projeto Online
 
-A aplicação está hospedada e pode ser acessada diretamente pelo navegador através do link abaixo:
+A aplicação está hospedada temporariamente e pode ser acessada pelo navegador através do link abaixo:
 
 👉 **[Visualizar Cardápio Online](https://upgraded-umbrella-x5gqwpwwvr6j2r4w-3000.app.github.dev)**
 
-*(Nota: Como está rodando em um ambiente de desenvolvimento do Codespaces, o link pode ficar inativo caso o servidor seja pausado).*
+*(Nota: Como está rodando em um ambiente de desenvolvimento do Codespaces, o link pode ficar inativo caso o servidor seja pausado. Para ver o projeto sempre funcionando, siga as instruções locais abaixo).*
 
-## 🛠️ Tecnologias Utilizadas
+## ⚙️ Como Executar o Projeto Localmente
 
-* **HTML5:** Estruturação semântica do conteúdo da página.
-* **CSS3:** Estilização visual, layout dos pratos e formatação.
-* **Ambiente:** Desenvolvido e testado utilizando GitHub Codespaces.
+Se você quiser baixar e testar este projeto na sua própria máquina, o processo é bem simples e rápido:
 
-## 👨‍💻 Autor
+1. Certifique-se de ter o ambiente **Node.js** instalado no seu computador.
+2. Clone este repositório para a sua máquina ou baixe o arquivo `.zip`.
+3. Abra o terminal dentro da pasta raiz do projeto.
+4. Execute o seguinte comando para iniciar um servidor local rápido:
 
-**Estevão Lorena Amorim**
-*Graduando em Ciência da Computação*
+```bash
+npx serve
