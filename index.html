@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contento Cucina - Restaurante Mediterrâneo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="paginas/style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="barra-navegacao">
+        <div class="container">
+            <a href="#inicio" class="logo">Contento<span>Cucina</span></a>
+            
+            <div class="botao-menu-mobile" id="botao-menu-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="links-navegacao" id="links-navegacao">
+                <li><a href="#inicio" class="active">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#reservas" class="btn">Reservas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <div id="inicio-conteudo">
+            <h1>Contento<span>Cucina</span></h1>
+            <p>Sabores autênticos do Mediterrâneo com coração italiano.</p>
+            <a href="#cardapio" class="btn">Ver Cardápio</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <div class="sobre-img">
+                    <img src="imagens/chef.jpg" alt="Chef Contento Cucina">
+                </div>
+                <div class="sobre-texto">
+                    <h2>Nossa História</h2>
+                    <p>Bem-vindo ao Contento Cucina, onde nossa paixão é trazer a autêntica 
+                        comida italiana com um toque fresco e vibrante do Mediterrâneo. Nascemos do 
+                        desejo de criar um lugar onde as pessoas pudessem se sentir contentes, 
+                        felizes e acolhidas.
+                    </p>
+                    <p>Usamos apenas ingredientes frescos, selecionados diariamente, para criar pratos 
+                        que homenageiam a tradição, mas com uma pitada de inovação. Da nossa pasta 
+                        fresca feita à mão ao nosso peixe grelhado, cada prato é uma celebração da 
+                        boa comida e da alegria de compartilhar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <div class="container">
+                <h1>Nosso Cardápio</h1>
+                <div class="menu-categoria">
+                    <h2>Entradas</h2>
+                </div>
+
+                <div class="cardapio-item">
+                    <div class="cardapio-img">
+                        <img src="imagens/carpaccio.jpg" alt="Carpaccio">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Carpaccio - R$ 41</h4>
+                        <p>
+                            Fatias finas de carne, cobertas com um molho clássico de mostarda e molho 
+                            inglês, parmesão e mini rúculas. Acompanha crostine da casa. Sugestão de 
+                            harmonização: Baga português e pinot noir novo mundo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cardapio-item reverse">
+                    <div class="cardapio-img">
+                        <img src="imagens/burrata.png" alt="Burrata com Pesto e Tomate Confit">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Burrata, Pesto e Crostine - R$ 82</h4>
+                        <p>
+                            Burrata de búfala, acompanhada de tomatinhos confitados, pesto genovese 
+                            e crostines crocantes. Sugestão de harmonização: Rosé.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="cardapio-item">
+                    <div class="cardapio-img">
+                        <img src="imagens/croqueta.jpg" alt="Croqueta di Manzo">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Croqueta di Manzo - R$ 37</h4>
+                        <p>
+                            Croquetes com recheio cremoso de carne bovina servidas com aioli. 
+                            Sugestão de harmonização: Pinot Noir ou Merlot.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-categoria" style="margin-top: 80px;">
+                    <h2>Pratos Principais</h2>
+                </div>
+
+                <div class="cardapio-item reverse">
+                    <div class="cardapio-img">
+                        <img src="imagens/parpadelle.jpg" alt="Papardelle i Stracotto">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Papardelle i Stracotto - R$ 71</h4>
+                        <p>
+                            Papardelle artesanal com stracotto de carne bovina cozida por 12 horas em 
+                            vinho tinto, finalizado com cebola frita crocante. 
+                            Sugestão de harmonização: Malbec ou Syrah.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cardapio-item">
+                    <div class="cardapio-img">
+                        <img src="imagens/tagliatelle.jpg" alt="Tagliatelle Gamberi al Limone">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Tagliatelle Gamberi al Limone - R$ 79</h4>
+                        <p>
+                            Massa fresca de corte fino, servida com camarões grelhados ao molho de limão. 
+                            Um prato leve e elegante. Sugestão de harmonização: Sauvignon Blanc.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="cardapio-item reverse">
+                    <div class="cardapio-img">
+                        <img src="imagens/bavetta.jpg" alt="Bavetta Grelhada">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Bavetta Grelhada - R$ 99</h4>
+                        <p>
+                            Bavetta grelhada (fraldinha red angus), acompanhada de molho secreto da casa 
+                            e fritas. Sugestão de harmonização: Malbec argentino ou bordeaux francês.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cardapio-item">
+                    <div class="cardapio-img">
+                        <img src="imagens/ossobuco.jpg" alt="Ossobuco com Risoto Milanês">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Ossobuco com Risoto Milanês - R$ 115</h4>
+                        <p>
+                            Ossobuco assado lentamente, servido com molho de açafrão. Sugestão de harmonização: 
+                            Barolo ou Brunello de Montalcino.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-categoria" style="margin-top: 80px;">
+                    <h2>Sobremesas</h2>
+                </div>
+
+                <div class="cardapio-item reverse">
+                    <div class="cardapio-img">
+                        <img src="imagens/tiramisu.jpg" alt="Tiramisù">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Tiramisù Clássico - R$ 35</h4>
+                        <p>
+                            Camadas de biscoito champagne embebidas em café, intercaladas com um 
+                            creme aveludado de mascarpone e polvilhadas com cacau em pó.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cardapio-item">
+                    <div class="cardapio-img">
+                        <img src="imagens/mousse.jpg" alt="Cannoli Siciliani">
+                    </div>
+                    <div class="cardapio-texto">
+                        <h4>Mousse di cioccolato fondente - R$ 35</h4>
+                        <p>
+                            Mousse clássico feito na casa com chocolate 63% e praliné de castanha de caju.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="container">
+                <h2>Nossos Momentos</h2>
+                <p style="margin-bottom: 30px;">Pratos, ambiente e sorrisos que definem a Contento Cucina.</p>
+                <div class="galeria-grid">
+                    <div class="galeria-item"><img src="imagens/clientes.jpg" alt="Clientes"></div>
+                    <div class="galeria-item"><img src="imagens/ambiente.jpg" alt="Ambiente"></div>
+                    <div class="galeria-item"><img src="imagens/vinho.jpg" alt="Vinho"></div>
+                    <div class="galeria-item"><img src="imagens/adega.jpg" alt="Adega"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservas">
+            <div class="container">
+                <h2>Faça sua Reserva</h2>
+                <p>Garantimos a sua mesa para uma noite inesquecível. Entre em contato para reservar.</p>
+                <a href="https://web.whatsapp.com" class="btn" target="_blank">Reservar pelo WhatsApp</a>
+                
+                <div class="contato-info">
+                    <div><i class="fas fa-phone"></i> (34) 99631-2121 </div>
+                    <div><i class="fas fa-map-marker-alt"></i> Av. Francisco Galassi, 1410 - Patrimônio, Uberlândia - MG, 38411-108</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/contento.cucina" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p><strong>Horário de Funcionamento:</strong></p>
+            <p>Terça a sexta: 18h - 23h | Sábado 12h - 23h | Domingo: 12h - 16h</p>
+            <p>&copy; 2025 Contento Cucina. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="paginas/script.js"></script>
+
+</body>
+</html>
